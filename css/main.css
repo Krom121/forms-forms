@@ -1,0 +1,197 @@
+/* remove default padding and margins */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* main container styles */
+
+.container {
+    width: 100%;
+    height: 100vh;
+    /*background-image:linear-gradient(
+    rgba(0,0,0, .8), 
+    rgba(0,0,0, .7)), 
+    url(/img/bg1.jpeg);*/
+    background-color: #cc683c;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* banners styles */
+
+.banner {
+    color: #fff;
+    width: 750px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.banner_title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 80px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    border-top: 7px solid #fff;
+    border-bottom: 7px solid #fff;
+}
+
+/* Arrows */
+
+.arrow {
+    font-size: 50px;
+    margin-bottom: 30px;
+    animation: arrowups 3s infinite;
+}
+
+/* button styles */
+
+.banner_btn {
+    width: 200px;
+    padding: 15px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 17px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: transparent;
+    color: #fff;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    outline: none;
+    cursor: pointer;
+    transition: transform .3s;
+}
+
+.banner_btn:hover {
+    transform: translateY(-1px);
+}
+
+.sign_up_form button {
+    display: block;
+    margin-top: 8px;
+    width: 150px;
+    padding: 8px 5px;
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    outline: none;
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+/* Form styles */
+
+.form_container {
+   display: flex;
+   width: 800px;
+   height: 600px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   box-shadow: 0 20px 50px rgba(0,0,0, .4);
+}
+
+.sign_up_form {
+    width: 50%;
+    background-color: #232328;
+    padding: 120px 50px;
+    box-sizing: border-box;
+}
+
+.form_input {
+    width: 300px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #cc683c;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #fff;
+    margin-bottom: 50px;
+    outline: none;
+    padding: 10px 0;
+    transition: border-bottom-color .8s;
+}
+
+.form_input:focus {
+    border-bottom-color: #cc683c;
+}
+
+.sign_up_form p {
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 200;
+    margin-bottom: 8px;
+}
+
+.sign_up_form label {
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.sign_up_form input[type='checkbox'] {
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+   width: 30px;
+   height: 15px;
+   background-color: #eee;
+   outline: none;
+   border-radius: 22px;
+   margin: 0 8px;
+   box-shadow: inset 0 0 10px rgba(0,0,0, .4);
+   position: relative;
+   transition: background-color .5s;
+}
+
+.sign_up_form input:checked[type='checkbox'] {
+    background-color: #cc683c;
+}
+
+.sign_up_form input[type='checkbox']::before {
+    content: '';
+    width: 17px;
+    height: 17px;
+    background-color: #aaa;
+    position: absolute;
+    top: -1px;
+    left: -4px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0, .4);
+    transition: left .5s;
+}
+
+.sign_up_form input:checked[type='checkbox']::before {
+    left: 18px;
+}
+
+/* animations */
+
+@keyframes arrowups {
+   0% {transform: translateY(0);}
+   20% {transform: translateY(0);}
+   40% {transform: translateY(-30px);}
+   50% {transform: translateY(0);}
+   60% {transform: translateY(-15px);}
+   80% {transform: translateY(0);}
+   100% {transform: translateY(0);}
+}
