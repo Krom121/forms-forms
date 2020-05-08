@@ -103,7 +103,7 @@
 
 .sign_up_form button {
     display: block;
-    margin-top: 8px;
+    margin-top: 80px;
     width: 150px;
     padding: 8px 5px;
     background-color: transparent;
@@ -124,7 +124,7 @@
     right: 2%;
     font-size: 23px;
     font-weight: bold;
-    color: #262626;
+    color: #fff;
     cursor: pointer;
 }
 
@@ -234,4 +234,84 @@
    60% {transform: translateY(-15px);}
    80% {transform: translateY(0);}
    100% {transform: translateY(0);}
+}
+
+/* Media queries */
+
+@media(max-width: 850px) {
+    .form_container {
+        width: 600px;
+        height: 400px;
+    }
+
+    .sign_up_form {
+        padding: 50px 30px;
+    }
+
+    .form_input {
+        width: 200px;
+        font-size: 14px;
+        margin-bottom: 30px;
+        padding: 7px 0;
+    }
+
+    .sign_up_form p {
+        font-size: 15px;
+    }
+
+    .sign_up_form label {
+        font-size: 13px;
+    }
+
+    .sign_up_form input[type='checkbox'] {
+        width: 25px;
+        height: 12px;
+    }
+
+    .sign_up_form input[type='checkbox']::before {
+        width: 14px;
+        height: 14px;
+    }
+
+    .sign_up_form button {
+        margin-top: 50px;
+        width: 120px;
+        padding: 6px 4px;
+        font-size: 13px;
+        border-width: 1px;
+
+    }
+
+    .header h1 {
+        font-size: 30px;
+    }
+}
+
+@media(max-width: 650px) {
+    .header {
+        display: none;
+    }
+
+    .form_container {
+        width: 300px;
+    }
+
+    .sign_up_form {
+        width: 100%;
+    }
+
+    .x_btn {
+        color: #fff;
+    }
+}
+
+@media(max-width: 800px) {
+    .banner {
+        width: 450px;
+    }
+
+    .banner_title {
+        font-size: 40px;
+        border-width: 4px;
+    }
 }
