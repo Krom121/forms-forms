@@ -13,5 +13,5 @@ document.querySelector('.x_btn').addEventListener('click', () => {
     document.querySelector('.banner').style.display = 'flex';
     // hide form
     document.querySelector('.form_container').style.cssText = 'opacity: 0; visibility: hidden';
-    document.querySelector('.container').style.cssText = '    background:linear-gradient(rgba(0,0,0, .8),rgba(0,0,0, .7)), url(/img/bg1.jpeg); background-size: cover';
+    document.querySelector('.container').style.cssText = '    background:linear-gradient(rgba(0,0,0, .8),rgba(0,0,0, .7)), url(https://kromform.s3-eu-west-1.amazonaws.com/bg1.jpeg); background-size: cover';
 });
